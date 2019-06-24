@@ -41,4 +41,60 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.gameBoardWrapper {
+  display: flex;
+  flex-direction: column; }
+  .gameBoardWrapper #feedBack {
+    margin: 30px auto; }
+
+#gameBoard {
+  margin: 30px auto 0; }
+  #gameBoard ul {
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    font-size: 40px; }
+    #gameBoard ul li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100px;
+      height: 100px;
+      box-sizing: border-box;
+      border: 1px solid #aaaaaa;
+      text-align: center; }
+      #gameBoard ul li:nth-child(3n) {
+        border-right: none;
+        border-left: none; }
+      #gameBoard ul li:nth-child(3n+1) {
+        border-left: none;
+        border-right: none; }
+      #gameBoard ul li:nth-child(-n+3) {
+        border-top: none; }
+      #gameBoard ul li:nth-child(n-6) {
+        border-bottom: none; }
+      #gameBoard ul li:hover {
+        background-color: #98e9ce;
+        cursor: pointer; }
+
+.header {
+  margin: 200px auto 0;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+  .header #newGameButton {
+    margin: 30px 0;
+    cursor: pointer; }
+  .header h1 {
+    font-size: 30px;
+    font-weight: 600; }
+  .header div {
+    display: flex;
+    align-items: center; }
+  .header input {
+    margin: 0;
+    margin-left: 10px;
+    cursor: pointer; }
+
 /*# sourceMappingURL=main.css.map */

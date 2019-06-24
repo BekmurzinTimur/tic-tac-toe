@@ -4,9 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
+    <header class="header">
+        <h1>Tic Tac Toe</h1>
+        <p>vs AI</p>
+        <button id="newGameButton" onclick="gameHandler.newGame()">New Game</button>
+        <div>
+            <label for="circle">Play as circle</label>
+            <input type="checkbox" name="circle" id="circle">
+        </div>
+    </header>
+    <section class="gameBoardWrapper">
+        <div id="gameBoard">
+
+        </div>
+        <div id="feedBack">
+            <p>Player 1 turn</p>
+        </div>
+    </section>
+    <script src="main.js"></script>
 </body>
 </html>
